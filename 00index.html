@@ -1,0 +1,290 @@
+<!DOCTYPE html> <!-- Define o tipo de documento HTML -->
+<html lang="pt-br"> <!-- Define o idioma do site como português do Brasil -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Codificação de caracteres -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidade com versões antigas do IE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Importa o Tailwind CSS -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script> <!-- EmailJS para formulário -->
+  <meta name="author" content="Eliab Honorio Da Silva"> <!-- Autor do site -->
+  <title>Site para o Projeto do Pex</title> <!-- Título da aba do navegador -->
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Estilo do body com fundo cinza claro, texto escuro e fonte padrão -->
+
+  <!-- Início do cabeçalho fixo -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Título da clínica -->
+      <h1 class="text-2xl font-bold text-indigo-600">Clínica Odontológica Dr. Íkaro Nathan Pacífico.</h1>
+
+      <!-- Navegação do topo -->
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="#hero" class="hover:text-indigo-600 transition">Início</a> <!-- Link para a seção inicial -->
+        <a href="#servicos" class="hover:text-indigo-600 transition">Serviços</a> <!-- Link para a seção sobre -->
+        <a href="https://wa.me/5583999345913" target="_blank" class="hover:text-indigo-600 transition">Whatsapp</a>
+        <!-- Link para WhatsApp -->
+        <a href="#Informativos" class="hover:text-indigo-600 transition">Informações</a>
+        <!-- Link para a seção informacoes -->
+        <a href="#AlgunsResultados" class="hover:text-indigo-600 transition">Resultados</a>
+        <!-- Link para a seção Resultados -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção de destaque -->
+  <section id="hero" class="pt-32 pb-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <!-- Texto principal -->
+      <div>
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Transformando sorrisos todos os dias!</h2>
+        <p class="text-lg text-gray-700 mb-6">Criamos pessoas felizes com atendimento humanizado e tecnologia de ponta,
+          sempre proprorcionando o melhor para nossos clientes! </p>
+        <a href="#contato"
+          class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition">Fale
+          conosco</a>
+      </div>
+
+      <!-- Imagem do destaque -->
+      <div>
+        <img src="m.jpg" alt="Imagem de atendimento odontológico" class="w-full rounded-lg shadow">
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção sobre os serviços -->
+  <section id="servicos" class="py-24 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <!-- Título da seção -->
+      <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">O que oferecemos</h3>
+
+
+
+      <!-- Topico de serviços -->
+      <div class="grid md:grid-cols-3 gap-10 text-left">
+
+        <!-- Serviços - Alinhadores -->
+        <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition">
+          <a href="01alinhadores.html" class="topico text-3xl md:text-4xl font-bold text-gray-900 mb-12">Alinhadores</a>
+          <p class="text-gray-600">Alinhadores odontológicos, também conhecidos como alinhadores invisíveis, são placas
+            transparentes feitas sob medida para corrigir a posição dos dentes.</p>
+        </div>
+        <!-- Serviços Clareamento -->
+        <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition">
+          <a href="02clareamento.html"
+            class="topico text-3xl md:text-4xl font-bold text-gray-900 mb-12">Clareamentos</a>
+          <p class="text-gray-600">O clareamento dental é um tratamento odontológico estético que visa clarear a cor dos
+            dentes. </p>
+        </div>
+        <!-- Facetas -->
+        <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition">
+          <a href="03facetas.html" class="topico text-3xl md:text-4xl font-bold text-gray-900 mb-12">Facetas</a>
+          <p class="text-gray-600">Facetas dentárias são lâminas finas, de porcelana ou resina, que são coladas sobre a
+            superfície frontal dos dentes para corrigir imperfeições estéticas como cor, formato e tamanho, além de
+            pequenos desalinhamentos. </p>
+        </div>
+        <!-- Harmonizacao -->
+        <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition">
+          <a href="04harmonizacao.html"
+            class="topico text-3xl md:text-4xl font-bold text-gray-900 mb-12">Harmonizacao</a>
+          <p class="text-gray-600">A harmonização orofacial é uma especialidade odontológica que busca aprimorar a
+            estética e a funcionalidade do rosto e sorriso do paciente, através de procedimentos minimamente invasivos.
+          </p>
+        </div>
+        <!-- implante -->
+        <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition">
+          <a href="05implante.html" class="topico text-3xl md:text-4xl font-bold text-gray-900 mb-12">Implantes</a>
+          <p class="text-gray-600">Os implantes dentários são estruturas de metal (titânio) ou cerâmica, posicionadas
+            cirurgicamente no osso maxilar superior ou inferior e que, preferencialmente, devem ser cobertos por gengiva
+            para substituir as raízes dentárias de um dente natural, que foi perdido devido a diversas razões.
+          </p>
+        </div>
+        <!-- Ortodontia -->
+        <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition">
+          <a href="06ortodontia.html" class="topico text-3xl md:text-4xl font-bold text-gray-900 mb-12">Ortodontia</a>
+          <p class="text-gray-600">Ortodontia é uma especialidade da odontologia focada em corrigir a posição dos dentes
+            e ossos maxilares, visando melhorar a estética e a função do sorriso e da mordida.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de informações -->
+  <section id="Informativos" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <!-- Título da seção -->
+      <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Informações</h3>
+
+      <!-- Tópico de Informacoes -->
+      <section class="py-10 px-5 bg-white">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid md:grid-cols-3 gap-10 text-center">
+
+            <!-- Localização -->
+            <div class="bg-gray-100 p-6 rounded-xl shadow-md">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.58358933496103!2d-35.49276153673265!3d-6.850094167014752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7adb7b20c87fcf9%3A0xcd997e0222a91e54!2sDr.%20%C3%8Dkaro%20Nathan%20Pac%C3%ADfico%20-Reabilita%C3%A7%C3%A3o%20Oral!5e0!3m2!1spt-BR!2sbr!4v1753562622428!5m2!1spt-BR!2sbr"
+                width="100%" height="250" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+            <!-- Horário de Funcionamento -->
+            <div class="bg-gray-100 p-6 rounded-xl shadow-md text-center">
+              <!-- Figurinha decorativa de horário -->
+              <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Relógio digital"
+                class="w-16 h-16 mx-auto mb-4">
+
+
+              <h2 class="text-2xl font-semibold text-blue-900 mb-4">Horário de Funcionamento</h2>
+
+              <p class="text-lg">🕒 Segunda a Sexta: 08:00 às 18:00</p>
+              <p class="text-lg mt-2">🕒 Sábado: 08:00 às 12:00</p>
+            </div>
+
+
+            <!-- Contato -->
+            <div class="bg-gray-100 p-6 rounded-xl shadow-md text-center">
+              <!-- Figurinha decorativa -->
+              <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="Atendimento"
+                class="w-16 h-16 mx-auto mb-4">
+
+
+              <h2 class="text-2xl font-semibold text-blue-900 mb-4">Contatos</h2>
+
+              <p class="text-lg mb-2">
+                <i class="fas fa-phone mr-2 text-blue-900"></i> (83) 9 9934-5913
+              </p>
+              <p class="text-lg">
+                <i class="fas fa-envelope mr-2 text-blue-900"></i> Eliabh@hotmail.com
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+  </section>
+
+
+
+
+
+  <!-- Seção sobre os serviços -->
+  <section id="AlgunsResultados" class="py-24 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+      <!-- Título da seção -->
+      <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Antes e depois!</h3>
+
+      <!-- Subtítulo (opcional) -->
+      <p class="text-xl font-semibold text-gray-700 mb-8">Sorrisos transformados com excelência!</p>
+
+      <!-- Galeria de imagens responsiva -->
+      <div class="flex flex-wrap justify-center gap-6">
+        <img src="a.jpeg" alt="Trabalho realizado - sorriso"
+          class="w-48 rounded-xl shadow-lg transition-transform hover:scale-105">
+        <img src="b.jpeg" alt="Trabalho realizado - sorriso"
+          class="w-48 rounded-xl shadow-lg transition-transform hover:scale-105">
+        <img src="c.jpeg" alt="Trabalho realizado - sorriso"
+          class="w-48 rounded-xl shadow-lg transition-transform hover:scale-105">
+        <img src="d.jpeg" alt="Trabalho realizado - sorriso"
+          class="w-48 rounded-xl shadow-lg transition-transform hover:scale-105">
+        <img src="e.jpeg" alt="Trabalho realizado - sorriso"
+          class="w-48 rounded-xl shadow-lg transition-transform hover:scale-105">
+        <img src="f.jpeg" alt="Trabalho realizado - sorriso"
+          class="w-48 rounded-xl shadow-lg transition-transform hover:scale-105">
+        <img src="g.jpeg" alt="Trabalho realizado - sorriso"
+          class="w-48 rounded-xl shadow-lg transition-transform hover:scale-105">
+        <img src="h.jpeg" alt="Trabalho realizado - sorriso"
+          class="w-48 rounded-xl shadow-lg transition-transform hover:scale-105">
+        <img src="i.jpeg" alt="Trabalho realizado - sorriso"
+          class="w-48 rounded-xl shadow-lg transition-transform hover:scale-105">
+        <img src="j.jpeg" alt="Trabalho realizado - sorriso"
+          class="w-48 rounded-xl shadow-lg transition-transform hover:scale-105">
+        <img src="k.jpeg" alt="Trabalho realizado - sorriso"
+          class="w-48 rounded-xl shadow-lg transition-transform hover:scale-105">
+        <img src="l.jpeg" alt="Trabalho realizado - sorriso"
+          class="w-48 rounded-xl shadow-lg transition-transform hover:scale-105">
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de contato -->
+  <section id="contato" class="py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center text-gray-900 mb-10">Fale conosco</h3>
+
+      <!-- Formulário de contato -->
+      <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+        <form id="contactform" class="space-y-6">
+          <!-- Campo nome -->
+          <div>
+            <label for="nome" class="block text-sm font-medium text-gray-700 mb-1">Nome:</label>
+            <input type="text" id="nome" name="nome" required class="w-full border border-gray-300 rounded px-4 py-2">
+          </div>
+
+          <!-- Campo email -->
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email:</label>
+            <input type="email" id="email" name="email" required
+              class="w-full border border-gray-300 rounded px-4 py-2">
+          </div>
+
+          <!-- Campo mensagem -->
+          <div>
+            <label for="mensagem" class="block text-sm font-medium text-gray-700 mb-1">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required
+              class="w-full border border-gray-300 rounded px-4 py-2"></textarea>
+          </div>
+
+          <!-- Botão enviar -->
+          <button type="submit"
+            class="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700 transition">Enviar</button>
+        </form>
+
+        <!-- Feedback após envio -->
+        <p id="feedback" class="text-center mt-4 text-sm text-green-600"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-50 py-6 text-center text-sm text-gray-500 border-t mt-20">
+    &copy; 2025 Clínica Odontológica Dr. Íkaro Nathan Pacífico. Todos os direitos reservados.
+  </footer>
+
+</body>
+
+</form>
+
+<!-- Feedback após envio -->
+<p id="feedback" class="text-center mt-4 text-sm text-green-600"></p>
+</div>
+</div>
+</section>
+
+<!-- Script do EmailJS -->
+<script>
+  (function () {
+    emailjs.init("YHjtVNPfF2siWxJL2"); // Chave pública
+
+    document.getElementById("contactform").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs.sendForm("service_wtlf44w", "template_434b4fs", this)
+        .then(function () {
+          document.getElementById("feedback").innerText = "Mensagem enviada com sucesso!";
+          document.getElementById("contactform").reset();
+        }, function (error) {
+          document.getElementById("feedback").innerText = "Erro ao enviar. Tente novamente.";
+          console.error("Erro:", error);
+        });
+    });
+  })();
+</script>
+</body>
+
+</html>
